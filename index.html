@@ -94,5 +94,14 @@
         <p class="subtext">Designed by The Odin Project</p>
         <p class="subtext">Coded by Kaleb Dodge</p>
     </footer>
+
+    <script>
+        console.log("👀");
+        let printSecret = () => console.log("You found my silly secret ;)");
+        // Why does getElementsByTagName not support foreach() or map() ??
+        let btns = document.querySelectorAll("button").forEach(button => {
+            button.addEventListener("click", printSecret);
+        });
+    </script>
 </body>
 </html>
